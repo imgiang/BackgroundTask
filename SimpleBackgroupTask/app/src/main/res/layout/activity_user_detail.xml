@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".UserDetailActivity">
+
+    <EditText
+        android:id="@+id/editTextId"
+        style="@style/layout_size"
+        android:layout_margin="@dimen/margin"
+        android:editable="false"
+        android:hint="id"
+        />
+
+    <EditText
+        android:id="@+id/editTextName"
+        style="@style/layout_size"
+        android:layout_margin="@dimen/margin"
+        android:hint="name" />
+
+    <EditText
+        android:inputType="textEmailSubject"
+        android:id="@+id/editTextEmail"
+        style="@style/layout_size"
+        android:layout_margin="@dimen/margin"
+        android:hint="email" />
+
+    <RadioGroup
+        android:id="@+id/radioGroupGender"
+        style="@style/layout_size">
+        <RadioButton
+            android:id="@+id/radioGenderFemale"
+            android:text="@string/gender_female"
+            style="@style/layout_size" />
+        <RadioButton
+            android:id="@+id/radioGenderMale"
+            style="@style/layout_size"
+            android:text="@string/gender_male"/>
+        <RadioButton
+            android:id="@+id/radioGenderOther"
+            style="@style/layout_size"
+            android:text="@string/gender_other"/>
+    </RadioGroup>
+    <RadioGroup
+        android:id="@+id/radioGroupStatus"
+        style="@style/layout_size">
+        <RadioButton
+            android:id="@+id/radioStatusActive"
+            style="@style/layout_size"
+            android:text="@string/status_active"/>
+        <RadioButton
+            android:id="@+id/radioStatusInactive"
+            style="@style/layout_size"
+            android:text="@string/status_inactive"/>
+    </RadioGroup>
+
+    <Button
+        android:id="@+id/buttonSave"
+        style="@style/layout_size"
+        android:layout_margin="@dimen/margin"
+        android:text="SAVE"
+        />
+    <Button
+        android:id="@+id/buttonDelete"
+        style="@style/layout_size"
+        android:layout_margin="@dimen/margin"
+        android:text="DELETE"
+        android:backgroundTint="@color/red"
+        />
+
+
+</LinearLayout>
